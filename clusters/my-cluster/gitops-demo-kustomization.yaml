@@ -11,3 +11,7 @@ spec:
     kind: GitRepository
     name: gitops-demo-webapp
   targetNamespace: default
+  decryption:
+    provider: sops
+    secretRef:
+      name: my-private-key
